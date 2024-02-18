@@ -1,0 +1,2 @@
+ 
+https://antizapret.prostovpn.org:8443/proxy.pac
