@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo pacman -Syy zapret-git bind --noconfirm
+sudo cp -f config.nfqws /opt/zapret/config
+sudo sh /opt/zapret/blockcheck.sh
+sudo /opt/zapret/ipset/get_reestr_hostlist.sh
+sudo cp zapret-hosts-user.txt /opt/zapret/ipset/
+sudo zapret start
+sudo systemctl enable --now zapret
+
